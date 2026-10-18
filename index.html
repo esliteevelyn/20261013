@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>英語字彙小測驗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-chinese: "LXGW WenKai Mono TC", sans-serif;
+      --font-english: "Patrick Hand", "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+    }
+
+    /* Google Sheets 必須設為「知道連結的檢視者」或「發布到網路」，瀏覽器才可讀取 CSV。 */
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      min-width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      background: #ffe5d9;
+      font-family: var(--font-chinese);
+    }
+
+    /* 測驗介面全部由 p5.js Canvas 繪製，不建立 HTML 測驗 UI。 */
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      font-family: var(--font-chinese);
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+</head>
+<body>
+  <script src="sketch.js"></script>
+</body>
+</html>
